@@ -1,0 +1,5 @@
+To run .jar file , cd to file location
+     java -jar Aquicore_War_game.jar com.aquicore.war.Driver
+     
+all the class .java files can be found along with this text file     
+
