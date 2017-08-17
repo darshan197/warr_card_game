@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////
 //Author:Darshan Hosakote								//
-//Date: 8/16/2017 8:54am								//
+//Date: 8/17/2017 8:23am								//
 //Description : Project implements the card game - war. //
 //Class: Deck											//
 //////////////////////////////////////////////////////////
@@ -36,11 +36,21 @@ public class Deck {
 		}
 	}
 	
+	//build custom deck
+	public void buildCustomDeck(){
+		for(int i =0 ; i< 2;i++){
+			for(int j=0; j<6;j++){
+				Card card = new Card(Card.customSuits[i],Card.customValues[j]);
+				deck.add(card);
+			}
+		}
+	}
+	
 	//built deck is shuffled
 	public void shuffleDeck() {
 		Collections.shuffle(deck);
-		Collections.shuffle(deck);
-		Collections.shuffle(deck);
+		//Collections.shuffle(deck);
+		//Collections.shuffle(deck);
 	}
 	
 	
